@@ -4,8 +4,25 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
+    public  static PlayerStats playerStats;
+    
     public float health;
     public float maxHealth;
+
+    public GameObject player;
+
+    void Awake()
+    {
+        if(playerStats != null)
+        {
+            Destroy(playerStats);
+        }
+        else
+        {
+            playerStats = this;
+        }
+        DontDestroyOnLoad(this);
+    }
 
     void Start()
     {
@@ -36,7 +53,7 @@ public class PlayerStats : MonoBehaviour
     {
         if (health <= 0)
         {
-            Destroy(gameObject);
+            Destroy(player);
         }
     }
 }

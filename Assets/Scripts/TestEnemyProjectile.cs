@@ -10,10 +10,10 @@ public class TestEnemyProjectile : MonoBehaviour
     {
         if (!collision.CompareTag("Enemy"))
         {
-            //if (collision.GetComponent<EnemyRecieveDamage>() != null)
-            //{
-            //    collision.GetComponent<EnemyRecieveDamage>().DealDamage(damage);
-            //}
+            if (collision.CompareTag("Player"))
+            {
+                PlayerStats.playerStats.DealDamage(damage);
+            }
             Destroy(gameObject);
         }
     }
