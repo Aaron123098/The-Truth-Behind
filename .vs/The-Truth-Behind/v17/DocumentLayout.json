@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{28411BF1-DE5C-47B7-1948-A9672B2EBC09}|Assembly-CSharp.csproj|c:\\users\\usuario\\desktop\\tesis 2\\the-truth-behind\\assets\\scripts\\topdowncharactercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28411BF1-DE5C-47B7-1948-A9672B2EBC09}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\topdowncharactercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28411BF1-DE5C-47B7-1948-A9672B2EBC09}|Assembly-CSharp.csproj|c:\\users\\usuario\\desktop\\tesis 2\\the-truth-behind\\assets\\scripts\\enemyrecievedamage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28411BF1-DE5C-47B7-1948-A9672B2EBC09}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyrecievedamage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28411BF1-DE5C-47B7-1948-A9672B2EBC09}|Assembly-CSharp.csproj|C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\assets\\scripts\\testprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28411BF1-DE5C-47B7-1948-A9672B2EBC09}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\testprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28411BF1-DE5C-47B7-1948-A9672B2EBC09}|Assembly-CSharp.csproj|C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\assets\\scripts\\testspell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28411BF1-DE5C-47B7-1948-A9672B2EBC09}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\testspell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{28411BF1-DE5C-47B7-1948-A9672B2EBC09}|Assembly-CSharp.csproj|C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\assets\\scripts\\roomspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28411BF1-DE5C-47B7-1948-A9672B2EBC09}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\roomspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28411BF1-DE5C-47B7-1948-A9672B2EBC09}|Assembly-CSharp.csproj|c:\\users\\usuario\\desktop\\tesis 2\\the-truth-behind\\assets\\scripts\\roomdestruction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28411BF1-DE5C-47B7-1948-A9672B2EBC09}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\roomdestruction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28411BF1-DE5C-47B7-1948-A9672B2EBC09}|Assembly-CSharp.csproj|C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\assets\\scripts\\roomtemplates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28411BF1-DE5C-47B7-1948-A9672B2EBC09}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\roomtemplates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28411BF1-DE5C-47B7-1948-A9672B2EBC09}|Assembly-CSharp.csproj|C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\assets\\scripts\\addroomtolist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28411BF1-DE5C-47B7-1948-A9672B2EBC09}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\addroomtolist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,56 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AddRoomToList.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\AddRoomToList.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\AddRoomToList.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\AddRoomToList.cs",
-              "RelativeToolTip": "Assets\\Scripts\\AddRoomToList.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "TopDownCharacterController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\TopDownCharacterController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\TopDownCharacterController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\TopDownCharacterController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\TopDownCharacterController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T20:22:44.943Z"
+              "WhenOpened": "2024-04-15T23:39:30.766Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RoomDestruction.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\RoomDestruction.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\RoomDestruction.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\RoomDestruction.cs",
-              "RelativeToolTip": "Assets\\Scripts\\RoomDestruction.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAxAAAA",
+              "Title": "EnemyRecieveDamage.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\EnemyRecieveDamage.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyRecieveDamage.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\EnemyRecieveDamage.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyRecieveDamage.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwCIAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T19:48:40.701Z",
+              "WhenOpened": "2024-04-15T23:17:07.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TestSpell.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\TestSpell.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\TestSpell.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\TestSpell.cs",
+              "RelativeToolTip": "Assets\\Scripts\\TestSpell.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T21:27:23.25Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "RoomTemplates.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\RoomTemplates.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\RoomTemplates.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\RoomTemplates.cs",
-              "RelativeToolTip": "Assets\\Scripts\\RoomTemplates.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAoAAAA",
+              "Title": "TestProjectile.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\TestProjectile.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\TestProjectile.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\TestProjectile.cs",
+              "RelativeToolTip": "Assets\\Scripts\\TestProjectile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T04:42:21.833Z"
+              "WhenOpened": "2024-04-15T22:32:12.07Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "RoomSpawner.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\RoomSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\RoomSpawner.cs",
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\RoomSpawner.cs",
               "RelativeToolTip": "Assets\\Scripts\\RoomSpawner.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAbAAAA",
+              "ViewState": "AQIAACIAAAAAAAAAAAASwD4AAABaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T04:30:03.01Z",
+              "WhenOpened": "2024-04-15T21:41:01.673Z",
               "EditorCaption": ""
             }
           ]

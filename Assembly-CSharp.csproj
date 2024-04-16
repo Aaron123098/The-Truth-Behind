@@ -60,14 +60,20 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.21f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\EnemyRecieveDamage.cs" />
     <Compile Include="Assets\Scripts\TopDownCharacterController.cs" />
     <Compile Include="Assets\Scripts\PropsAltar.cs" />
     <Compile Include="Assets\Scripts\AddRoomToList.cs" />
     <Compile Include="Assets\Scripts\RoomTemplates.cs" />
     <Compile Include="Assets\Scripts\RoomSpawner.cs" />
+    <Compile Include="Assets\Scripts\TestEnemyShooting.cs" />
+    <Compile Include="Assets\Scripts\TestProjectile.cs" />
+    <Compile Include="Assets\Scripts\TestEnemyProjectile.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\LayerTrigger.cs" />
     <Compile Include="Assets\Scripts\RoomDestruction.cs" />
+    <Compile Include="Assets\Scripts\PlayerStats.cs" />
+    <Compile Include="Assets\Scripts\TestSpell.cs" />
     <Compile Include="Assets\Scripts\SpriteColorAnimation.cs" />
   </ItemGroup>
   <ItemGroup>

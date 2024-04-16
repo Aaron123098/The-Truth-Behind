@@ -8,6 +8,7 @@ TagManager:
   - Rooms
   - Grid
   - ClosedGround
+  - Enemy
   layers:
   - Default
   - TransparentFX
