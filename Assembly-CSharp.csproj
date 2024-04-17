@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\TestProjectile.cs" />
     <Compile Include="Assets\Scripts\TestEnemyProjectile.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\CurrencyPickUp.cs" />
     <Compile Include="Assets\Scripts\LayerTrigger.cs" />
     <Compile Include="Assets\Scripts\RoomDestruction.cs" />
     <Compile Include="Assets\Scripts\PlayerStats.cs" />

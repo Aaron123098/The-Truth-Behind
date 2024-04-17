@@ -135,6 +135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  dashRange: 1
 --- !u!212 &6942808358371317527
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -292,7 +293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce6e854015d34d54d96e05d25ed98098, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 0}
-  minDamage: 0
-  maxDamage: 0
-  projectileForce: 0
+  projectile: {fileID: 1346177747303358958, guid: 82ad0faa608f06148af2f354d41bda43, type: 3}
+  minDamage: 20
+  maxDamage: 50
+  projectileForce: 10
