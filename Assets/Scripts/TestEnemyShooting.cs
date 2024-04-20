@@ -6,13 +6,14 @@ using UnityEngine;
 public class TestEnemyShooting : MonoBehaviour
 {
     public GameObject projectile;
-    public GameObject player;
+    private GameObject player;
     public float damage;
     public float projectileForce;
     public float couldDown;
 
     private void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
         StartCoroutine(ShootPlayer());
     }
 

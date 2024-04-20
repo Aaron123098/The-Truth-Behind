@@ -9,6 +9,7 @@ TagManager:
   - Grid
   - ClosedGround
   - Enemy
+  - Destruction
   layers:
   - Default
   - TransparentFX

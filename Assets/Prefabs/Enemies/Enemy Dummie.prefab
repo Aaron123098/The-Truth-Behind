@@ -477,7 +477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 1346177747303358958, guid: 326a9f791fdf71540b6209cebd6ace6d, type: 3}
-  player: {fileID: 0}
+  player: {fileID: 6942808358371317524, guid: ef67ba864d1ecc042b5f4cf48455c0a6, type: 3}
   damage: 10
   projectileForce: 10
   couldDown: 5
