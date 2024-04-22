@@ -10,6 +10,8 @@ TagManager:
   - ClosedGround
   - Enemy
   - Destruction
+  - GameManager
+  - Screens
   layers:
   - Default
   - TransparentFX
