@@ -81,6 +81,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
     <Compile Include="Assets\Scripts\Game\SceneController.cs" />
+    <Compile Include="Assets\Scripts\Game\RoomTemplates.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets\Scripts\Player\TopDownCharacterController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
@@ -105,14 +106,13 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\Player\TestProjectile.cs" />
-    <Compile Include="Assets\Scripts\Player\RoomTemplates.cs" />
     <Compile Include="Assets\Scripts\Game\CurrencyPickUp.cs" />
     <Compile Include="Assets\Scripts\Game\SpriteColorAnimation.cs" />
     <Compile Include="Assets\Scripts\Game\RoomSpawner.cs" />
     <Compile Include="Assets\Scripts\Game\RoomDestruction.cs" />
     <Compile Include="Assets\Scripts\Game\PropsAltar.cs" />
-    <Compile Include="Assets\Scripts\Game\LayerTrigger.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
+    <Compile Include="Assets\Scripts\Game\LayerTrigger.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
