@@ -14,14 +14,25 @@ namespace Cainos.PixelArtTopDown_Basic
         private Color curColor;
         private Color targetColor;
 
+        private SceneController sceneController;
+
+        public bool isPlayerOver = false;
+
+        private void Start()
+        {
+            sceneController = GameObject.FindAnyObjectByType<SceneController>();
+        }
+
         private void OnTriggerEnter2D(Collider2D other)
         {
             targetColor = new Color(1, 1, 1, 1);
+            isPlayerOver = true;
         }
 
         private void OnTriggerExit2D(Collider2D other)
         {
             targetColor = new Color(1, 1, 1, 0);
+            isPlayerOver = false;
         }
 
         private void Update()
@@ -32,6 +43,12 @@ namespace Cainos.PixelArtTopDown_Basic
             {
                 r.color = curColor;
             }
+
+            if (Input.GetKey(KeyCode.E) && isPlayerOver)
+            {
+                sceneController.LoadScene("Game");
+            }
         }
+
     }
 }

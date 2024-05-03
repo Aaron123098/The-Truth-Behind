@@ -18,6 +18,7 @@ public class ScoreManager : MonoBehaviour
         if (PlayerPrefs.HasKey("HighScore"))
         {
             highScore = PlayerPrefs.GetInt("HighScore");
+
         }
     }
 

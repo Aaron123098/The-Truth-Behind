@@ -12,6 +12,8 @@ TagManager:
   - Destruction
   - GameManager
   - Screens
+  - DialogueManager
+  - Boss
   layers:
   - Default
   - TransparentFX

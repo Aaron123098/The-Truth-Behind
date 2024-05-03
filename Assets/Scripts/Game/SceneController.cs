@@ -9,11 +9,12 @@ public class SceneController : MonoBehaviour
 
     //private void Awake()
     //{
-    //    if(instance == null)
+    //    if (instance == null)
     //    {
     //        instance = this;
     //        DontDestroyOnLoad(gameObject);
-    //    }else
+    //    }
+    //    else
     //    {
     //        Destroy(gameObject);
     //    }
@@ -21,7 +22,16 @@ public class SceneController : MonoBehaviour
 
     public void LoadScene(string sceneName)
     {
-        if (sceneName == "MainMenu") Destroy(GameObject.FindGameObjectWithTag("GameManager"));
+        foreach (GameObject gameMan in GameObject.FindGameObjectsWithTag("GameManager"))
+        {
+            Destroy(gameMan);
+        }
+
+        foreach (GameObject dialogueMan in GameObject.FindGameObjectsWithTag("DialogueManager"))
+        {
+            Destroy(dialogueMan);
+        }
+
         SceneManager.LoadScene(sceneName);
         Time.timeScale = 1f;
     }

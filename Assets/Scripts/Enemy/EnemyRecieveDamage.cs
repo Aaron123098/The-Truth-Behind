@@ -45,6 +45,10 @@ public class EnemyRecieveDamage : MonoBehaviour
     {
         if (health <= 0)
         {
+            if (gameObject.CompareTag("Boss"))
+            {
+                FindAnyObjectByType<GameManager>().SendToYardAfterWin();
+            }
             Instantiate(lootDrop, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }

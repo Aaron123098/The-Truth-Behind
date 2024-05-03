@@ -9,13 +9,13 @@ public class TestProjectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(!collision.CompareTag("Player"))
+        if(!collision.CompareTag("Player") && !collision.CompareTag("SpawnPoint") && !collision.CompareTag("Destruction"))
         {
-            if (collision.CompareTag("Enemy"))
+            if (collision.CompareTag("Enemy") || collision.CompareTag("Boss"))
             {
                 collision.GetComponent<EnemyRecieveDamage>().DealDamage(damage);
             }
-            if(!collision.CompareTag("SpawnPoint") && !collision.CompareTag("Destruction")) Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
 }

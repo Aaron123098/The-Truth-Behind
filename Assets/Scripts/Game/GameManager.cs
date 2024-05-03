@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using static DialogueManager;
 
 public class GameManager : MonoBehaviour
 {
@@ -21,10 +22,28 @@ public class GameManager : MonoBehaviour
 
     public bool isGameOver = false;
 
+    public static GameManager gameManager;
+
     void Awake()
     {
+        if (gameManager != null)
+        {
+            Destroy(gameManager);
+        }
+        else
+        {
+            gameManager = this;
+        }
+        DontDestroyOnLoad(this);
+
         pauseScreen.SetActive(false);
         resultScreen.SetActive(false);
+
+    }
+
+    private void Start()
+    {
+        
     }
 
     private void Update()
@@ -104,6 +123,50 @@ public class GameManager : MonoBehaviour
     {
         resultScreen.SetActive(true);
 
+    }
+
+    public void SendToYard()
+    {
+        DialogueManager dialogueManager = FindAnyObjectByType<DialogueManager>();
+
+        if(dialogueManager.dialogueState == DialogueManager.DialogueState.BeforeFrstRun)
+        {
+            dialogueManager.dialogueState = DialogueManager.DialogueState.AfterFrstRun;
+            string saveString = dialogueManager.dialogueState.ToString();
+            PlayerPrefs.SetString("DialogueState", saveString);
+        }
+
+        FindAnyObjectByType<SceneController>().LoadScene("Yard");
+    }
+
+    public void SendToYardAfterWin()
+    {
+        DialogueManager dialogueManager = FindAnyObjectByType<DialogueManager>();
+
+        switch (dialogueManager.dialogueState)
+        {
+            case DialogueManager.DialogueState.BeforeFrstRun:
+                dialogueManager.dialogueState = DialogueManager.DialogueState.FrstRunCompleted;
+                break;
+            case DialogueManager.DialogueState.AfterFrstRun:
+                dialogueManager.dialogueState = DialogueManager.DialogueState.FrstRunCompleted;
+                break;
+
+            case DialogueManager.DialogueState.FrstRunCompleted:
+                dialogueManager.dialogueState = DialogueManager.DialogueState.ScndRunCompleted;
+                break;
+
+            case DialogueManager.DialogueState.ScndRunCompleted:
+                dialogueManager.dialogueState = DialogueManager.DialogueState.ThirdRundCompleted;
+                break;
+
+            default: break;
+        }
+
+        string saveString = dialogueManager.dialogueState.ToString();
+        PlayerPrefs.SetString("DialogueState", saveString);
+
+        FindAnyObjectByType<SceneController>().LoadScene("Yard");
     }
 
 }

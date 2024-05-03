@@ -23,7 +23,7 @@ public class PlayerStats : MonoBehaviour
 
     void Awake()
     {
-        if(playerStats != null)
+        if (playerStats != null)
         {
             Destroy(playerStats);
         }
@@ -32,14 +32,19 @@ public class PlayerStats : MonoBehaviour
             playerStats = this;
         }
         DontDestroyOnLoad(this);
+
     }
 
     void Start()
     {
+        
+
         health = maxHealth;
         SetHealthUI();
         gameManager = GetComponent<GameManager>();
         screens = GameObject.FindGameObjectWithTag("Screens");
+
+        
     }
 
     public void DealDamage(float damage)
