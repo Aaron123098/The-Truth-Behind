@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 810387621729de8439ea52841ecc6a6c, type: 3}
+  m_Name: L9Q1
+  m_EditorClassIdentifier: 
+  questionImage: {fileID: 21300000, guid: a08cadc4c430a954b86ca16945efbf98, type: 3}
+  questionText: "\xBFQu\xE9 alternativa expresa el uso responsable de los recursos
+    financieros para casos de sismos?"
+  answers:
+  - Solo C y E
+  - Solo B y D
+  - Solo A y C
+  - Solo D y B

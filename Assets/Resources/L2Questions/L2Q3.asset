@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 810387621729de8439ea52841ecc6a6c, type: 3}
+  m_Name: L2Q3
+  m_EditorClassIdentifier: 
+  questionImage: {fileID: 21300000, guid: ade2eeecaa2d28f4f919d7bb7e88182e, type: 3}
+  questionText: "Luego de leer las fuentes, \xBFqu\xE9 medidas econ\xF3micas tom\xF3
+    cada gobierno para solucionar la crisis?"
+  answers:
+  - "Mientras que la Fuente A se\xF1ala que Hoover promovi\xF3 el voluntariado de
+    las personas, la Fuente B se\xF1ala que Roosevelt promovi\xF3 una gesti\xF3n
+    econ\xF3mica inteligente y organizada."
+  - "Mientras que la Fuente A se\xF1ala que Hoover estuvo a favor de los empresarios,
+    la Fuente B se\xF1ala que Roosevelt promovi\xF3 el aporte privado para los programas
+    sociales."
+  - "Mientras que la Fuente A se\xF1ala que Hoover promovi\xF3 la producci\xF3n industrial,
+    la Fuente B se\xF1ala que Roosevelt busc\xF3 la subvenci\xF3n privada para la
+    recuperaci\xF3n econ\xF3mica."
+  - "Mientras que la Fuente A se\xF1ala que Hoover aument\xF3 la inversi\xF3n privada
+    federal para las obras p\xFAblicas, la Fuente B se\xF1ala que Roosevelt promovi\xF3
+    el uso del dinero de los bancos rurales y urbanos."

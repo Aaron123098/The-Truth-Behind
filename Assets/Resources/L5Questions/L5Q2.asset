@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 810387621729de8439ea52841ecc6a6c, type: 3}
+  m_Name: L5Q2
+  m_EditorClassIdentifier: 
+  questionImage: {fileID: 21300000, guid: fdd32923cb613514c8fe93d8ee0f1637, type: 3}
+  questionText: "Considerando los diferentes elementos presentes en el mapa (t\xEDtulo,
+    autor\xEDa, etc.), \xBFcu\xE1l de las alternativas presenta su fiabilidad y pertinencia
+    correctas?"
+  answers:
+  - "Es una fuente fiable y pertinente, porque se puede reconocer al autor del mapa
+    y est\xE1 relacionado con los pa\xEDses integrantes del Tratado Ant\xE1rtico."
+  - "Es una fuente fiable, porque se puede reconocer al autor del mapa; pero no es
+    pertinente, porque no ofrece informaci\xF3n sobre el Tratado Ant\xE1rtico."
+  - "Es una fuente pertinente, porque la informaci\xF3n est\xE1 relacionada con los
+    pa\xEDses integrantes del Tratado Ant\xE1rtico; pero no es fiable, porque no
+    se puede reconocer al autor con claridad."
+  - "No es una fuente pertinente ni fiable; porque el autor no se puede identificar
+    con claridad, ni ofrece informaci\xF3n sobre el Tratado Ant\xE1rtico."

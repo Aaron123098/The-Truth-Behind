@@ -13,6 +13,8 @@ public class QuestionSetup : MonoBehaviour
     [SerializeField]
     private Image questionImg;
     [SerializeField]
+    private TextMeshProUGUI questionText;
+    [SerializeField]
     private AnswerButton[] answerButtons;
 
     [SerializeField]
@@ -87,7 +89,8 @@ public class QuestionSetup : MonoBehaviour
 
     private void SetQuestionValues()
     {
-        questionImg = currentQuestion.questionImage;
+        questionImg.sprite = currentQuestion.questionImage;
+        questionText.text = currentQuestion.questionText;
     }
 
     private void SetAnswerValues()

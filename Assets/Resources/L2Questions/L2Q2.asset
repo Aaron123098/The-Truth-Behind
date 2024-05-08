@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 810387621729de8439ea52841ecc6a6c, type: 3}
+  m_Name: L2Q2
+  m_EditorClassIdentifier: 
+  questionImage: {fileID: 21300000, guid: 02fd814e547060d4a8b910de1e8cef69, type: 3}
+  questionText: "Considerando las dos fuentes presentadas a continuaci\xF3n, \xBFpor
+    qu\xE9 Mussolini invadi\xF3 Abisinia en octubre de 1935?"
+  answers:
+  - "Tanto en la primera como en la segunda fuente, Mussolini presentaba la intenci\xF3n
+    de invasi\xF3n a Abisinia para demostrar el poder de Italia."
+  - "Tanto en la primera como en la segunda fuente, el gobierno italiano busc\xF3
+    incluir las intenciones de invasi\xF3n a Abisinia dentro de los tratados internacionales."
+  - "La primera fuente presenta la intenci\xF3n de Mussolini. Mientras que la segunda
+    fuente presenta las intenciones para evitarla."
+  - "La primera fuente presenta la intenci\xF3n de Mussolini de integrar a los aliados
+    a la invasi\xF3n a Abisinia. Mientras que la segunda fuente presenta las intenciones
+    de evitar la invasi\xF3n."

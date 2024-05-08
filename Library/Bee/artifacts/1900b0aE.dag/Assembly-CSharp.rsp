@@ -403,6 +403,7 @@
 "Assets/Scripts/Q&A/AnswerButton.cs"
 "Assets/Scripts/Q&A/QuestionData.cs"
 "Assets/Scripts/Q&A/QuestionSetup.cs"
+"Assets/Scripts/Q&A/Timer.cs"
 "Assets/Scripts/ScoreManager.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"

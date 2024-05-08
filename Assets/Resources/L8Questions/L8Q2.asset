@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 810387621729de8439ea52841ecc6a6c, type: 3}
+  m_Name: L8Q2
+  m_EditorClassIdentifier: 
+  questionImage: {fileID: 21300000, guid: 4734f07545a05db4f846a5dfa648e79f, type: 3}
+  questionText: "Seg\xFAn la siguiente fuente, \xBFqu\xE9 funci\xF3n cumpli\xF3 el
+    Estado en la d\xE9cada de los 90?"
+  answers:
+  - "Eliminaci\xF3n de las restricciones de participaci\xF3n privada, integraci\xF3n
+    de los bancos a la econom\xEDa del pa\xEDs y reducir progresivamente el d\xE9ficit
+    financiero."
+  - "Control de la devaluaci\xF3n de la moneda, as\xED como la promoci\xF3n de la
+    llegada de bancos extranjeros."
+  - "Control de las tasas de inter\xE9s bancario y aumento de la producci\xF3n de
+    petr\xF3leo y miner\xEDa por parte del Estado para posicionarlo en el mercado
+    extranjero."
+  - "Aumento de la producci\xF3n petrolera y minera del Estado, pero determinando
+    precios conforme al mercado internacional, as\xED como la participaci\xF3n privada
+    de los bancos en la reforma del sistema fiscal."

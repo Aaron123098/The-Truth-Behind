@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 810387621729de8439ea52841ecc6a6c, type: 3}
+  m_Name: L4Q2
+  m_EditorClassIdentifier: 
+  questionImage: {fileID: 21300000, guid: 49f959e24e5a167439e2965d69ad6546, type: 3}
+  questionText: "\xBFCu\xE1les son las motivaciones que llevan a actuar a Giancarlo
+    y Mauricio?"
+  answers:
+  - "Giancarlo se siente impulsado por su compromiso como m\xE9dico para salvar vidas
+    y proteger a sus colegas y pacientes, mientras que Mauricio se motiva por su
+    deber como polic\xEDa para garantizar el cumplimiento de las normas y proteger
+    la seguridad p\xFAblica durante la crisis del COVID-19."
+  - "Giancarlo est\xE1 motivado principalmente por el deseo de reconocimiento y admiraci\xF3n
+    de sus colegas y la sociedad, mientras que Mauricio busca promover su imagen
+    personal como un h\xE9roe en la lucha contra el COVID-19."
+  - "Giancarlo se siente obligado a trabajar debido a la presi\xF3n social y las
+    expectativas de su familia, mientras que Mauricio est\xE1 motivado por el temor
+    al castigo y la repercusi\xF3n de no cumplir con su deber como polic\xEDa."
+  - "Giancarlo encuentra su motivaci\xF3n en el deseo de acumular riqueza y poder
+    a trav\xE9s de su trabajo como m\xE9dico, mientras que Mauricio busca simplemente
+    cumplir con su jornada laboral sin un verdadero sentido de prop\xF3sito o compromiso
+    con la causa."

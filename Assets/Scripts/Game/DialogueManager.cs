@@ -113,11 +113,10 @@ public class DialogueManager : MonoBehaviour
 
     void StartQuestions(string folder)
     {
+        questionsScreen.SetActive(true);
         QuestionSetup questionSetup = FindAnyObjectByType<QuestionSetup>();
-
         questionSetup.folderToSearch = folder;
         questionSetup.GetQuestionAssets(folder);
         questionSetup.ShowNextQuestion();
-        questionsScreen.SetActive(true);
     }
 }

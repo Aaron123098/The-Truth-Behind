@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: fdidfoidiodfoi
   m_EditorClassIdentifier: 
   questionImage: {fileID: 0}
+  questionText: DIOS
   answers:
   - "\xF1{{"
   - l

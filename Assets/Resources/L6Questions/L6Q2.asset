@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 810387621729de8439ea52841ecc6a6c, type: 3}
+  m_Name: L6Q2
+  m_EditorClassIdentifier: 
+  questionImage: {fileID: 21300000, guid: 5fed02d920987a247ab5d4a77141ecf7, type: 3}
+  questionText: "Luego de observar las im\xE1genes del Nevado Pastoruri y su cambio
+    debido al cambio clim\xE1tico, \xBFqu\xE9 alternativa expresa el impacto de este
+    cambio en la calidad de vida de la poblaci\xF3n?"
+  answers:
+  - "Aumento del terreno f\xE9rtil para cultivar alimentos b\xE1sicos."
+  - Aumento de las posibilidades de encontrar yacimientos minerales.
+  - "Reducci\xF3n r\xE1pida de las fuentes de agua para la poblaci\xF3n."
+  - Mejoramiento del clima, reduciendo problemas respiratorios.

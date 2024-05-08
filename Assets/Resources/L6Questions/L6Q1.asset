@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 810387621729de8439ea52841ecc6a6c, type: 3}
+  m_Name: L6Q1
+  m_EditorClassIdentifier: 
+  questionImage: {fileID: 21300000, guid: 06a8adf0d4badde4da6baec30c9a701e, type: 3}
+  questionText: "\xBFCu\xE1l fue el impacto del derrame de petr\xF3leo en la vida
+    de la poblaci\xF3n de Ja\xE9n?"
+  answers:
+  - "Contaminaci\xF3n del agua y da\xF1o de los cultivos de la comunidad."
+  - "Da\xF1o de la vida silvestre de toda la amazon\xEDa peruana."
+  - "Limpieza de los canales de agua y recuperaci\xF3n de la vida animal."
+  - "Afect\xF3 a los puestos de trabajo de la regi\xF3n de Loreto."

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: QTest
   m_EditorClassIdentifier: 
   questionImage: {fileID: 0}
+  questionText: HOLA
   answers:
   - CORRECT
   - WRONG1

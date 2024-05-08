@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 810387621729de8439ea52841ecc6a6c, type: 3}
+  m_Name: L1Q3
+  m_EditorClassIdentifier: 
+  questionImage: {fileID: 21300000, guid: a64eab7bdd76a1c44ace190b7efc3b5a, type: 3}
+  questionText: "Durante un reportaje sobre la inflaci\xF3n de Per\xFA en 1985, se
+    present\xF3 la siguiente fuente tomada del libro de Historia del Per\xFA Contempor\xE1neo
+    de Carlos Contreras y Marco Cueto, quienes son Historiadores, el primero es de
+    Historia Econ\xF3mica y el segundo es Historiador Social. \xBFEn qu\xE9 medida
+    es pertinente para el estudio de la pol\xEDtica econ\xF3mica del primer gobierno
+    de Alan Garc\xEDa?"
+  answers:
+  - "Tiene pertinencia porque su tem\xE1tica coincide con el tema del reportaje."
+  - "No es pertinente porque ellos no conocieron al presidente Alan Garc\xEDa."
+  - "No tiene pertinencia debido a la poca especializaci\xF3n de sus autores."
+  - Tiene pertinencia porque sus autores fueron entrevistados en el reportaje.

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 810387621729de8439ea52841ecc6a6c, type: 3}
+  m_Name: L1Q1
+  m_EditorClassIdentifier: 
+  questionImage: {fileID: 21300000, guid: 8669f22dbccb512458970e5bdbfd9926, type: 3}
+  questionText: "\xBFQu\xE9 alternativa presenta correctamente el grado de fiabilidad
+    de las fuentes?"
+  answers:
+  - "La fuente s\xED es confiable porque el autor tiene autoridad para hablar sobre
+    el tema pues es un especialista del tema."
+  - "La fuente no es confiable porque el autor es brit\xE1nico y la Guerra Fr\xEDa
+    enfrent\xF3 a EEUU y la URSS."
+  - "La fuente no es confiable porque el historiador tiene una especialista muy amplia
+    frente a algo tan espec\xEDfico como el impacto de la Guerra Fr\xEDa."
+  - "La fuente s\xED es confiable porque su redacci\xF3n es propia de un historiador. "

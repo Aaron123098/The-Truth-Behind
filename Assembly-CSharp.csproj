@@ -118,6 +118,7 @@
     <Compile Include="Assets\Scripts\Game\CurrencyPickUp.cs" />
     <Compile Include="Assets\Scripts\Game\SpriteColorAnimation.cs" />
     <Compile Include="Assets\Scripts\NPCs\GuideDialogue.cs" />
+    <Compile Include="Assets\Scripts\Q&amp;A\Timer.cs" />
     <Compile Include="Assets\Scripts\Game\RoomSpawner.cs" />
     <Compile Include="Assets\Scripts\Game\RoomDestruction.cs" />
     <Compile Include="Assets\Scripts\Game\PropsAltar.cs" />
