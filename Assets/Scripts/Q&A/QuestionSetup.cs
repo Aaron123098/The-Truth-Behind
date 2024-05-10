@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using static DialogueManager;
 
 public class QuestionSetup : MonoBehaviour
 {
@@ -24,7 +25,7 @@ public class QuestionSetup : MonoBehaviour
     public GameObject successScreen;
     public GameObject failScreen;
 
-    private int attemptsNmbr = 5;
+    private int attemptsNmbr = 999999;
     public TextMeshProUGUI attemptsText;
     public string folderToSearch;
 
@@ -146,6 +147,32 @@ public class QuestionSetup : MonoBehaviour
 
     public void Continue()
     {
+        DialogueManager dialogueManager = FindAnyObjectByType<DialogueManager>();
+
+        SellerDialogue sellerDialogue = FindAnyObjectByType<SellerDialogue>();
+        AdminDialogue adminDialogue = FindAnyObjectByType<AdminDialogue>();
+        BossDialogue bossDialogue = FindAnyObjectByType<BossDialogue>();
+
+        if (sellerDialogue)
+        {
+            if (sellerDialogue.isPlayerOver)
+            {
+                SellerDialogue.firstTriviaCompletedSeller = true;
+            }
+
+            if (adminDialogue.isPlayerOver)
+            {
+                AdminDialogue.firstTriviaCompletedAdmin = true;
+            }
+        }
+        else
+        {
+            FindAnyObjectByType<GameManager>().SendToYardAfterWin();
+        }
+
         this.gameObject.SetActive(false);
+
+        successScreen.SetActive(false);
+        questionScreen.SetActive(true);
     }
 }

@@ -63,7 +63,36 @@ public class GuideDialogue : MonoBehaviour
                         "¡Ve y averigua qué es lo que ofrece!"
                     };
                     break;
-
+                case DialogueManager.DialogueState.FrstRunCompleted:
+                    dialogue.sentences = new string[6]
+                    {
+                        "Qué tal.",
+                        "Lograste derrotar al regidor.",
+                        "Ahora se han abierto más posibilidades para poder encontrar lo que buscamos.",
+                        "Me parece que Ricardo tiene novedades para ti. Anda a verlo.",
+                        "También puedes ir a ver a Susana y a Erick, creo que te andan buscando.",
+                        "Ellos están en la zona este y suroeste del patio."
+                    };
+                    break;
+                case DialogueManager.DialogueState.ScndRunCompleted:
+                    dialogue.sentences = new string[3]
+                    {
+                        "¡Has vuelto!",
+                        "Estás teniendo mucho éxito explorando los cuartos.",
+                        "Me han llegado estos documentos y me gustaría que me puedas ayudar con ellos, por favor"
+                    };
+                    break;
+                case DialogueManager.DialogueState.ThirdRundCompleted:
+                    dialogue.sentences = new string[6]
+                    {
+                        "¡LO HICISTE!",
+                        "Finalmente, el regidor terminó de dar todas las pistas faltantes.",
+                        "Gracias a ti hemos podido recuperar gran parte del conocimiento que se nos fue quitado.",
+                        "Ahora, como último paso, ve a hablar con Laura, la administradora de este lugar.",
+                        "Ella tiene las 2 últimas tareas para ti.",
+                        "Complétalas, y te lo agradeceremos por siempre."
+                    };
+                    break;
                 default:
                     break;
 

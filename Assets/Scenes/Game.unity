@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &65821598 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2181774902742845828, guid: aaf09f0152afff1438b164e236ea71a4, type: 3}
+  m_PrefabInstance: {fileID: 1185702891255779341}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &191350595
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -191,11 +196,26 @@ PrefabInstance:
       propertyPath: dialoguePanel
       value: 
       objectReference: {fileID: 585991355}
+    - target: {fileID: 8822883669511649538, guid: 172e25c0d25777f45b5a2d033f3ecc72, type: 3}
+      propertyPath: questionsScreen
+      value: 
+      objectReference: {fileID: 65821598}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 172e25c0d25777f45b5a2d033f3ecc72, type: 3}
+--- !u!114 &191350596 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8822883669511649538, guid: 172e25c0d25777f45b5a2d033f3ecc72, type: 3}
+  m_PrefabInstance: {fileID: 191350595}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 561f848ba6bbc6f43a2d92ae77af60e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &238025190
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -338,7 +358,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.772135
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1019,6 +1039,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4294564026337931547, guid: aaf09f0152afff1438b164e236ea71a4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4878306350024959989, guid: aaf09f0152afff1438b164e236ea71a4, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -1035,6 +1059,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 254962407}
+    - target: {fileID: 7114319011910322773, guid: aaf09f0152afff1438b164e236ea71a4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 191350596}
+    - target: {fileID: 7114319011910322773, guid: aaf09f0152afff1438b164e236ea71a4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisplayNextSentence
+      objectReference: {fileID: 0}
     - target: {fileID: 7197083175158899930, guid: aaf09f0152afff1438b164e236ea71a4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

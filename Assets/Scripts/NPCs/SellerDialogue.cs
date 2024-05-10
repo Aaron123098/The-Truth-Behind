@@ -6,6 +6,7 @@ public class SellerDialogue : MonoBehaviour
 {
     public Dialogue dialogue;
     public bool isPlayerOver = false;
+    static public bool firstTriviaCompletedSeller = false;
 
     public void TriggerDialogue()
     {
@@ -60,6 +61,37 @@ public class SellerDialogue : MonoBehaviour
                     };
                     break;
 
+                case DialogueManager.DialogueState.FrstRunCompleted:
+                    if(firstTriviaCompletedSeller)
+                    {
+                        dialogue.sentences = new string[6]
+                        {
+                            "¡Hola de nuevo!",
+                            "Te agradezco mucho por la ayuda que me diste.",
+                            "Realmente te estás desempeñando muy bien",
+                            "Realmente te estás desempeñando muy bien",
+                            "Por ello, me gustaría que puedas ayudarme nuevamente con estos documentos que me han llegado",
+                            "¿Puedes hacerlo?"
+                        };
+                    }
+                    else
+                    {
+                        dialogue.sentences = new string[9] {
+                        "¡Hola!",
+                        "Veo que ya que intentaste superar los cuartos...",
+                        "Son algo difíciles, ¿verdad?",
+                        "No te preocupes, yo te puedo ayudar con algunos recursos que tengo...",
+                        "Pero a cambio, me tendrás que dar algunas de las monedas que vayas encontrando.",
+                        "Luchar con enemigos no es la única manera de conseguirlas. Si les haces algunos favores a los vecinos, podrás" +
+                        "recibirlas también.",
+                        "Y hablando de ello, quisiera que me ayudases con algo...",
+                        "Verás, cuando fuiste a batallar, uno de los soldados del regidor se sorpendió tanto con tus habilidades que" +
+                        "para intentar que no volvieses a los cuartos, nos envió algunos documentos que registran hechos pasados de gran" +
+                        "importancia...",
+                        "Sin embargo, no puedo verificar si son confiables o pertinentes. ¿Crees que me puedes ayudar con eso?"
+                    };
+                    }
+                    break;
                 default:
                     break;
 

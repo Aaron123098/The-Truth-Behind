@@ -1268,13 +1268,14 @@ GameObject:
   - component: {fileID: 8696025752136096493}
   - component: {fileID: 8594952714708322640}
   - component: {fileID: 5868225187173851630}
+  - component: {fileID: 5813240003439012171}
   m_Layer: 5
   m_Name: Q&A Screen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6351798942192004926
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1387,6 +1388,20 @@ MonoBehaviour:
   failScreen: {fileID: 6372810101119193739}
   attemptsText: {fileID: 1543538318148955098}
   folderToSearch: 
+--- !u!114 &5813240003439012171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2181774902742845828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb63b290d8cc3e943a591fad6a6a02e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerText: {fileID: 5467392909036993776}
+  remainingTime: 2
 --- !u!1 &2829682815044910081
 GameObject:
   m_ObjectHideFlags: 0
@@ -3225,7 +3240,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &9131466657592547170
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3666,7 +3681,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &144952208788940591
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4066,7 +4081,7 @@ RectTransform:
   m_Father: {fileID: 1573403618587175265}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
