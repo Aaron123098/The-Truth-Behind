@@ -25,6 +25,7 @@ public class AnswerButton : MonoBehaviour
         if (isCorrect)
         {
             gameObject.GetComponent<Image>().color = new Color32(45, 184, 78, 255);
+            FindAnyObjectByType<PlayerStats>().coins += FindAnyObjectByType<QuestionSetup>().award;
             StartCoroutine(ShowNextQuestionWithDelay());
         }
         else

@@ -7,7 +7,7 @@ public class RoomSpawner : MonoBehaviour
 
     public int openSide;
 
-    private RoomTemplates roomTemplates;
+    public RoomTemplates roomTemplates;
     private int rand;
     private bool spawned = false;
 
@@ -74,6 +74,9 @@ public class RoomSpawner : MonoBehaviour
         }
     }
 
-    
+    public void Init()
+    {
+
+    }
 
 }

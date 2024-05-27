@@ -18,9 +18,12 @@ namespace Cainos.PixelArtTopDown_Basic
 
         public bool isPlayerOver = false;
 
+        public bool altarAv;
+
         private void Start()
         {
             sceneController = GameObject.FindAnyObjectByType<SceneController>();
+            altarAv = false;
         }
 
         private void OnTriggerEnter2D(Collider2D other)
@@ -44,7 +47,7 @@ namespace Cainos.PixelArtTopDown_Basic
                 r.color = curColor;
             }
 
-            if (Input.GetKey(KeyCode.E) && isPlayerOver)
+            if (Input.GetKey(KeyCode.E) && isPlayerOver && altarAv)
             {
                 sceneController.LoadScene("Game");
             }

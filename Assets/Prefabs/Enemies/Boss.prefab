@@ -200,6 +200,9 @@ GameObject:
   - component: {fileID: 7320572348352076038}
   - component: {fileID: 595039234789118382}
   - component: {fileID: -601382867207633339}
+  - component: {fileID: 1408534053798244547}
+  - component: {fileID: 840743137716394079}
+  - component: {fileID: 3631083042754843816}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Boss
@@ -217,7 +220,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -11.71, y: -2.12, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 0.92375624, y: 0.92375624, z: 0.46187812}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6378985703369921462}
@@ -264,7 +267,7 @@ SpriteRenderer:
   m_SortingLayerID: -923298313
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 704f565101a0e14439df72f21fc9396d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -292,6 +295,7 @@ MonoBehaviour:
   healthBar: {fileID: 8568864061444332584}
   healthBarSlider: {fileID: 1208437907739346099}
   lootDrop: {fileID: 3489848624161815006, guid: 2384bbf08738b2949991926fcaacee17, type: 3}
+  audioManager: {fileID: 0}
 --- !u!61 &7320572348352076038
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -324,18 +328,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.08159256, y: -0.8159257}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.35, y: 0.5}
+    oldSize: {x: 3.88, y: 3.38}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.4242811, y: 1.2284594}
   m_EdgeRadius: 0
 --- !u!50 &595039234789118382
 Rigidbody2D:
@@ -380,6 +384,63 @@ MonoBehaviour:
     name: 
     sentences: []
   bossDefeated: 0
+--- !u!114 &1408534053798244547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6096463992038409183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 231ffd300218f1243a0dc477f9bd3b53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 6942808358371317524, guid: ef67ba864d1ecc042b5f4cf48455c0a6, type: 3}
+  speed: 2.5
+  distanceBetween: 8
+  direction: {x: 0, y: 0}
+  distance: 8
+  alreadyRunning: 0
+--- !u!95 &840743137716394079
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6096463992038409183}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cf7cb0e014a4afa4f85e3fbc535679c9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3631083042754843816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6096463992038409183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f1063633b3b5dc49a1ef4e8def37180, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 1346177747303358958, guid: 326a9f791fdf71540b6209cebd6ace6d, type: 3}
+  damage: 15
+  projectileForce: 12
+  cooldDown: 3
+  distance: 0
+  distanceBetween: 8
 --- !u!1 &6749999139595204167
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,7 +469,7 @@ RectTransform:
   m_GameObject: {fileID: 6749999139595204167}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.01651, y: 0.03858, z: 0.03269}
+  m_LocalScale: {x: 0.04161015, y: 0.09723317, z: 0.0823886}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3698918373393894600}

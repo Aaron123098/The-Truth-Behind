@@ -21,6 +21,8 @@ public class PlayerStats : MonoBehaviour
     public GameManager gameManager;
     public GameObject screens;
 
+    public AudioManager audioManager;
+
     void Awake()
     {
         if (playerStats != null)
@@ -43,8 +45,9 @@ public class PlayerStats : MonoBehaviour
         SetHealthUI();
         gameManager = GetComponent<GameManager>();
         screens = GameObject.FindGameObjectWithTag("Screens");
+        audioManager = FindAnyObjectByType<AudioManager>();
 
-        
+
     }
 
     public void DealDamage(float damage)
@@ -52,6 +55,7 @@ public class PlayerStats : MonoBehaviour
         health -= damage;
         CheckDeath();
         SetHealthUI();
+        audioManager.soundPlayerDamage();
     }
 
     public void HealPlayer(float heal)

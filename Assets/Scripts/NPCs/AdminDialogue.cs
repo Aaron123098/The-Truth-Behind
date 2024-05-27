@@ -6,7 +6,7 @@ public class AdminDialogue : MonoBehaviour
 {
     public Dialogue dialogue;
     public bool isPlayerOver = false;
-    static public bool firstTriviaCompletedAdmin = false;
+    static public int triviaNmbr = 0;
 
     public void TriggerDialogue()
     {
@@ -37,24 +37,55 @@ public class AdminDialogue : MonoBehaviour
             switch (FindAnyObjectByType<DialogueManager>().dialogueState)
             {
                 case DialogueManager.DialogueState.ThirdRundCompleted:
-                    if (firstTriviaCompletedAdmin)
+                    JSONSaveLoadSystem jsonFile = FindAnyObjectByType<JSONSaveLoadSystem>();
+
+                    if (triviaNmbr == 1)
                     {
-                        dialogue.sentences = new string[2]
+                        if (jsonFile.l10act)
                         {
-                            "Gracias por tu ayuda.",
-                            "Por favor, continua con el siguiente.",
-                        };
+                            dialogue.sentences = new string[2]
+                            {
+                                "Gracias por tu ayuda.",
+                                "Por favor, continua con el siguiente.",
+                            };
+                        }
+                        else
+                        {
+                            dialogue.sentences = new string[1] {
+                               "Vuelve a hablar conmigo en 1 segundo."
+                            };
+                        }
                     }
-                    else
+                    else if (triviaNmbr == 0)
                     {
-                        dialogue.sentences = new string[7] {
-                           "Estoy muy orgullosa de ti.",
-                           "Has demostrado todas tus capacidades y no me queda más que agradecerte por todo lo que hiciste.",
-                           "Pero, ahora, me queda pedirte 2 últimos favores...",
-                           "Será proponer 2 planes de reestructuración para nosotros...",
-                           "El primero, que ayude a gestionar nuestros recursos económicos",
-                           "El segundo, para poder proteger nuestros derechos.",
-                           "Gracias."
+                        if (jsonFile.l9act)
+                        {
+                            dialogue.sentences = new string[7] {
+                               "Estoy muy orgullosa de ti.",
+                               "Has demostrado todas tus capacidades y no me queda más que agradecerte por todo lo que hiciste.",
+                               "Pero, ahora, me queda pedirte 2 últimos favores...",
+                               "Será proponer 2 planes de reestructuración para nosotros...",
+                               "El primero, que ayude a gestionar nuestros recursos económicos",
+                               "El segundo, para poder proteger nuestros derechos.",
+                               "Gracias."
+                            };
+                        }
+                        else
+                        {
+                            dialogue.sentences = new string[1] {
+                               "Vuelve a hablar conmigo en 1 segundo."
+                            };
+                        }
+                        
+                    }
+                    else if(triviaNmbr == 2)
+                    {
+                        dialogue.sentences = new string[5] {
+                           "¡LO LOGRASTE!",
+                           "Le has devuelto al pueblo la memoria, sus recursos y todo lo que se le había arrebatado...",
+                           "Estamos infinitamente agradecidos contigo.",
+                           "Buena suerte en todo lo que se te venga.",
+                           "¡Hasta luego! :D."
                         };
                     }
                     break;

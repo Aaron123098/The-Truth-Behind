@@ -1145,6 +1145,10 @@
       <Project>{2E4CEF5B-27EC-F839-435B-2B9F09A778CC}</Project>
       <Name>InkEditor</Name>
     </ProjectReference>
+    <ProjectReference Include="Scripts.csproj">
+      <Project>{8B1FBE7A-1A64-13BD-04AA-BDB126C19FF7}</Project>
+      <Name>Scripts</Name>
+    </ProjectReference>
     <ProjectReference Include="Ink-Libraries.csproj">
       <Project>{9FBC2E82-FA0B-5DE7-02C8-F8636F6CD4AB}</Project>
       <Name>Ink-Libraries</Name>

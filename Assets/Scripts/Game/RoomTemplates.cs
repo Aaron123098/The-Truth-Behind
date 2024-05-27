@@ -30,4 +30,9 @@ public class RoomTemplates : MonoBehaviour
             Instantiate(enemies, rooms[i].transform.position, Quaternion.identity); 
         }
     }
+
+    public void Init()
+    {
+
+    }
 }

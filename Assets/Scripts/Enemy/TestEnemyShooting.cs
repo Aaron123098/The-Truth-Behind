@@ -9,7 +9,9 @@ public class TestEnemyShooting : MonoBehaviour
     private GameObject player;
     public float damage;
     public float projectileForce;
-    public float couldDown;
+    public float cooldDown;
+    public float distance;
+    public float distanceBetween;
 
     private void Start()
     {
@@ -17,10 +19,15 @@ public class TestEnemyShooting : MonoBehaviour
         StartCoroutine(ShootPlayer());
     }
 
+    private void Update()
+    {
+        distance = Vector2.Distance(transform.position, player.transform.position);
+    }
+
     IEnumerator ShootPlayer()
     {
-        yield return new WaitForSeconds(couldDown);
-        if(player != null )
+        yield return new WaitForSeconds(cooldDown);
+        if(player != null && distance < distanceBetween)
         {
             GameObject spell = Instantiate(projectile, transform.position, Quaternion.identity);
             Vector2 myPos = transform.position;
@@ -28,8 +35,8 @@ public class TestEnemyShooting : MonoBehaviour
             Vector2 direction = (playerPos - myPos).normalized;
             spell.GetComponent<Rigidbody2D>().velocity = direction * projectileForce;
             spell.GetComponent<TestEnemyProjectile>().damage = damage;
-            StartCoroutine(ShootPlayer());
         }
+        StartCoroutine(ShootPlayer());
     }
 
 }

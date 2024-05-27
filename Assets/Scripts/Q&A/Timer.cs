@@ -24,6 +24,7 @@ public class Timer : MonoBehaviour
         }else if(minutes < 0)
         {
             remainingTime = 0;
+            FindObjectOfType<QuestionSetup>().ShowFailScreen();
         }
 
         minutes = Mathf.FloorToInt(remainingTime / 60);

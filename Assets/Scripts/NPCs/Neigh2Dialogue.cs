@@ -36,10 +36,22 @@ public class Neigh2Dialogue : MonoBehaviour
             switch (FindAnyObjectByType<DialogueManager>().dialogueState)
             {
                 case DialogueManager.DialogueState.FrstRunCompleted:
-                    dialogue.sentences = new string[2] { 
+                    JSONSaveLoadSystem jsonFile = FindAnyObjectByType<JSONSaveLoadSystem>();
+
+                    if (jsonFile.l7act)
+                    {
+                        dialogue.sentences = new string[2] {
                         "Holaaaaaaaaaa",
                         "Mira lo que me ha llegado, seguro tú me puedes ayudar..."
-                    };
+                        };
+                    }
+                    else
+                    {
+                        dialogue.sentences = new string[1] {
+                            "Lo estás haciendo bien. Sigue tu camino."
+                        };
+                    }
+
                     break;
 
                 default:

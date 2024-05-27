@@ -1,3 +1,4 @@
+using Cainos.PixelArtTopDown_Basic;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -121,11 +122,11 @@ public class DialogueManager : MonoBehaviour
                 {
                     StartQuestions("L11Questions");
                 }
-                else if (adminDialogue.isPlayerOver && dialogueState == DialogueState.ThirdRundCompleted && !AdminDialogue.firstTriviaCompletedAdmin)
+                else if (adminDialogue.isPlayerOver && dialogueState == DialogueState.ThirdRundCompleted && AdminDialogue.triviaNmbr == 0)
                 {
                     StartQuestions("L9Questions");
                 }
-                else if (adminDialogue.isPlayerOver && dialogueState == DialogueState.ThirdRundCompleted && AdminDialogue.firstTriviaCompletedAdmin)
+                else if (adminDialogue.isPlayerOver && dialogueState == DialogueState.ThirdRundCompleted && AdminDialogue.triviaNmbr == 1)
                 {
                     StartQuestions("L10Questions");
                 }
@@ -172,10 +173,159 @@ public class DialogueManager : MonoBehaviour
 
     void StartQuestions(string folder)
     {
-        questionsScreen.SetActive(true);
         QuestionSetup questionSetup = FindAnyObjectByType<QuestionSetup>();
-        questionSetup.folderToSearch = folder;
-        questionSetup.GetQuestionAssets(folder);
-        questionSetup.ShowNextQuestion();
+
+        bool thisQuestionActive = GetBoolQuestion(folder);
+
+        if(thisQuestionActive)
+        {
+            questionsScreen.SetActive(true);
+            setConfigurableVariables(folder, questionSetup);
+            questionSetup.folderToSearch = folder;
+            questionSetup.GetQuestionAssets(folder);
+            questionSetup.ShowNextQuestion();
+        }
+        else
+        {
+            SellerDialogue sellerDialogue = FindAnyObjectByType<SellerDialogue>();
+            AdminDialogue adminDialogue = FindAnyObjectByType<AdminDialogue>();
+
+            if (sellerDialogue)
+            {
+                if (sellerDialogue.isPlayerOver)
+                {
+                    SellerDialogue.firstTriviaCompletedSeller = true;
+                }
+
+                if (adminDialogue.isPlayerOver)
+                {
+                    if (AdminDialogue.triviaNmbr == 0)
+                    {
+                        AdminDialogue.triviaNmbr = 1;
+                    }
+                    else if (AdminDialogue.triviaNmbr == 1)
+                    {
+                        AdminDialogue.triviaNmbr = 2;
+                    }
+                }
+
+                FindAnyObjectByType<PropsAltar>().altarAv = true;
+            }
+            else
+            {
+                FindAnyObjectByType<GameManager>().SendToYardAfterWin();
+            }
+        }
+
+        
+    }
+
+    public void setConfigurableVariables(string folder,  QuestionSetup questionSetup)
+    {
+        JSONSaveLoadSystem jsonFile = FindAnyObjectByType<JSONSaveLoadSystem>();
+
+        switch (folder)
+        {
+            case "L1Questions":
+                questionSetup.attemptsNmbr = 5;
+                questionSetup.questionNmbr = jsonFile.srcNumbL1;
+                questionSetup.help = jsonFile.helpL1;
+                questionSetup.award = 10;
+                questionSetup.timeLimit = 300;
+                break;
+            case "L2Questions":
+                questionSetup.attemptsNmbr = 5;
+                questionSetup.questionNmbr = jsonFile.srcNumbL2;
+                questionSetup.help = jsonFile.helpL2;
+                questionSetup.award = 10;
+                questionSetup.timeLimit = 300;
+                break;
+            case "L3&4Questions":
+                questionSetup.attemptsNmbr = 5;
+                questionSetup.questionNmbr = 3;
+                questionSetup.help = "";
+                questionSetup.award = jsonFile.awardL3;
+                questionSetup.timeLimit = 300;
+                break;
+            case "L5Questions":
+                questionSetup.attemptsNmbr = 5;
+                questionSetup.questionNmbr = 2;
+                questionSetup.help = "";
+                questionSetup.award = 10;
+                questionSetup.timeLimit = jsonFile.timeLimitL5;
+                break;
+            case "L6Questions":
+                questionSetup.attemptsNmbr = 5;
+                questionSetup.questionNmbr = 2;
+                questionSetup.help = "";
+                questionSetup.award = jsonFile.awardL6;
+                questionSetup.timeLimit = 300;
+                break;
+            case "L7Questions":
+                questionSetup.attemptsNmbr = jsonFile.wrongLimitL7;
+                questionSetup.questionNmbr = 2;
+                questionSetup.help = "";
+                questionSetup.award = 10;
+                questionSetup.timeLimit = 300;
+                break;
+            case "L8Questions":
+                questionSetup.attemptsNmbr = 5;
+                questionSetup.questionNmbr = 2;
+                questionSetup.help = "";
+                questionSetup.award = jsonFile.awardL8;
+                questionSetup.timeLimit = 300;
+                break;
+            case "L9Questions":
+                questionSetup.attemptsNmbr = jsonFile.wrongLimitL9;
+                questionSetup.questionNmbr = 2;
+                questionSetup.help = "";
+                questionSetup.award = 10;
+                questionSetup.timeLimit = 300;
+                break;
+            case "L10Questions":
+                questionSetup.attemptsNmbr = 5;
+                questionSetup.questionNmbr = 2;
+                questionSetup.help = "";
+                questionSetup.award = 10;
+                questionSetup.timeLimit = jsonFile.timeLimitL10;
+                break;
+            case "L11Questions":
+                questionSetup.attemptsNmbr = 5;
+                questionSetup.questionNmbr = 2;
+                questionSetup.help = "";
+                questionSetup.award = 10;
+                questionSetup.timeLimit = jsonFile.timeLimitL11;
+                break;
+        }
+    }
+
+    private bool GetBoolQuestion(string folder)
+    {
+        JSONSaveLoadSystem jsonFile = FindAnyObjectByType<JSONSaveLoadSystem>();
+
+        switch (folder)
+        {
+            case "L1Questions":
+                return jsonFile.l1act;
+            case "L2Questions":
+                return jsonFile.l2act;
+            case "L3&4Questions":
+                return jsonFile.l34act;
+            case "L5Questions":
+                return jsonFile.l5act;
+            case "L6Questions":
+                return jsonFile.l6act;
+            case "L7Questions":
+                return jsonFile.l7act;
+            case "L8Questions":
+                return jsonFile.l8act;
+            case "L9Questions":
+                return jsonFile.l9act;
+            case "L10Questions":
+                return jsonFile.l10act;
+            case "L11Questions":
+                return jsonFile.l11act;
+            default: return false;
+        }
     }
 }

@@ -1,3 +1,4 @@
+using Cainos.PixelArtTopDown_Basic;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -25,23 +26,37 @@ public class QuestionSetup : MonoBehaviour
     public GameObject successScreen;
     public GameObject failScreen;
 
-    private int attemptsNmbr = 999999;
     public TextMeshProUGUI attemptsText;
     public string folderToSearch;
+    public int totalFolderCount = 0;
+
+    //Variables configurables
+    public int attemptsNmbr;
+    public int questionNmbr;
+    public string help;
+    public int award;
+    public int timeLimit;
+
+    public PropsAltar altar;
 
     private void Awake()
     {
-        attemptsText.text = "Fallos restantes: " + attemptsNmbr.ToString();
         folderToSearch = "";
+        altar = FindAnyObjectByType<PropsAltar>();
     }
 
     public void ShowNextQuestion()
     {
-        if (questions.Count > 0)
+        attemptsText.text = "Fallos restantes: " + attemptsNmbr.ToString();
+        print(questions.Count);
+        print(totalFolderCount);
+        if (questions.Count > totalFolderCount - questionNmbr)
+
         {
             SelectNewQuestion();
             SetQuestionValues();
             SetAnswerValues();
+            SetTimer();
         }
         else
         {
@@ -78,11 +93,11 @@ public class QuestionSetup : MonoBehaviour
     public void GetQuestionAssets(string folder)
     {
         questions = new List<QuestionData>(Resources.LoadAll<QuestionData>(folder));
+        totalFolderCount = questions.Count;
     }
 
     private void SelectNewQuestion()
     {
-        
         int randomQuestionIndex = Random.Range(0, questions.Count);
         currentQuestion = questions[randomQuestionIndex];
         questions.RemoveAt(randomQuestionIndex);
@@ -110,6 +125,11 @@ public class QuestionSetup : MonoBehaviour
             answerButtons[i].SetIsCorrect(isCorrect);
             answerButtons[i].SetAnswerText(answers[i]);
         }
+    }
+
+    private void SetTimer()
+    {
+        FindObjectOfType<Timer>().remainingTime = timeLimit;
     }
 
     private List<string> RandomizeAnswers(List<string> originalList)
@@ -147,11 +167,9 @@ public class QuestionSetup : MonoBehaviour
 
     public void Continue()
     {
-        DialogueManager dialogueManager = FindAnyObjectByType<DialogueManager>();
 
         SellerDialogue sellerDialogue = FindAnyObjectByType<SellerDialogue>();
         AdminDialogue adminDialogue = FindAnyObjectByType<AdminDialogue>();
-        BossDialogue bossDialogue = FindAnyObjectByType<BossDialogue>();
 
         if (sellerDialogue)
         {
@@ -162,8 +180,17 @@ public class QuestionSetup : MonoBehaviour
 
             if (adminDialogue.isPlayerOver)
             {
-                AdminDialogue.firstTriviaCompletedAdmin = true;
+                if(AdminDialogue.triviaNmbr == 0)
+                {
+                    AdminDialogue.triviaNmbr = 1;
+                }
+                else if(AdminDialogue.triviaNmbr == 1)
+                {
+                    AdminDialogue.triviaNmbr = 2;
+                }
             }
+
+            altar.altarAv = true;
         }
         else
         {

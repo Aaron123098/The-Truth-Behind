@@ -7,11 +7,10 @@ namespace Cainos.PixelArtTopDown_Basic
     public class TopDownCharacterController : MonoBehaviour
     {
         public float speed;
-        public float dashRange;
 
-        private Animator animator;
+        public Animator animator;
+        public Rigidbody2D rb;
 
-        Vector2 targetPos;
 
         private GameManager gameManager;
 
@@ -27,37 +26,27 @@ namespace Cainos.PixelArtTopDown_Basic
             if (gameManager.isGameOver || gameManager.currentState == GameManager.GameState.GamePaused) return;
 
             Vector2 dir = Vector2.zero;
-            targetPos = Vector2.zero;
 
             if (Input.GetKey(KeyCode.A))
             {
                 dir.x = -1;
                 animator.SetInteger("Direction", 3);
-                targetPos.x = -1;
             }
             else if (Input.GetKey(KeyCode.D))
             {
                 dir.x = 1;
                 animator.SetInteger("Direction", 2);
-                targetPos.x = 1;
             }
 
             if (Input.GetKey(KeyCode.W))
             {
                 dir.y = 1;
                 animator.SetInteger("Direction", 1);
-                targetPos.y += 1;
             }
             else if (Input.GetKey(KeyCode.S))
             {
                 dir.y = -1;
                 animator.SetInteger("Direction", 0);
-                targetPos.y = -1;
-            }
-
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                transform.Translate(targetPos * dashRange);
             }
 
             dir.Normalize();
@@ -66,6 +55,10 @@ namespace Cainos.PixelArtTopDown_Basic
             GetComponent<Rigidbody2D>().velocity = speed * dir;
         }
 
+        public void Init()
+        {
+
+        }
 
     }
 }

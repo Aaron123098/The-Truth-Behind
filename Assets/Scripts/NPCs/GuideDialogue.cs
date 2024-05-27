@@ -1,3 +1,4 @@
+using Cainos.PixelArtTopDown_Basic;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -51,16 +52,19 @@ public class GuideDialogue : MonoBehaviour
                         "Ve a la zona norte del patio y entra al transportador para ir a 'los cuartos'.",
                         "Te esperaré aquí cuando termines tu primer intento..."
                     };
+
+                    FindAnyObjectByType<PropsAltar>().altarAv = true;
+
                     break;
 
                 case DialogueManager.DialogueState.AfterFrstRun:
-                    dialogue.sentences = new string[4] {
+                    dialogue.sentences = new string[6] {
                         "¡Hola!",
                         "Veo que ya pudiste probar cómo son 'los cuartos'...",
                         "Puedes ir a intentar superarlos las veces que quieras.",
-                        "Ahora, también puedes hablar con Ricardo, el vendedor. Él te podrá ayudar a facilitar tus próximos intentos " +
-                        "brindándote algunas mejoras." +
-                        "¡Ve y averigua qué es lo que ofrece!"
+                        "Pero puede que antes necesites hablar con todos los pobladores de este lugar, si es posible.",
+                        "Por cierto, Ricardo, el vendedor, ha estado preguntando por ti.",
+                        "Vé y habla con él. Está a la izquierda de la entrada al transportador."
                     };
                     break;
                 case DialogueManager.DialogueState.FrstRunCompleted:
@@ -75,12 +79,26 @@ public class GuideDialogue : MonoBehaviour
                     };
                     break;
                 case DialogueManager.DialogueState.ScndRunCompleted:
-                    dialogue.sentences = new string[3]
+                    JSONSaveLoadSystem jsonFile = FindAnyObjectByType<JSONSaveLoadSystem>();
+
+                    if (jsonFile.l11act)
                     {
-                        "¡Has vuelto!",
-                        "Estás teniendo mucho éxito explorando los cuartos.",
-                        "Me han llegado estos documentos y me gustaría que me puedas ayudar con ellos, por favor"
-                    };
+                        dialogue.sentences = new string[3]
+                        {
+                            "¡Has vuelto!",
+                            "Estás teniendo mucho éxito explorando los cuartos.",
+                            "Me han llegado estos documentos y me gustaría que me puedas ayudar con ellos, por favor"
+                        };
+                    }
+                    else
+                    {
+                        dialogue.sentences = new string[3]
+                        {
+                            "¡Has vuelto!",
+                            "Estás teniendo mucho éxito explorando los cuartos.",
+                            "Sigue tu camino"
+                        };
+                    }
                     break;
                 case DialogueManager.DialogueState.ThirdRundCompleted:
                     dialogue.sentences = new string[6]

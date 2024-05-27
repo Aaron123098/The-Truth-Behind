@@ -13,14 +13,18 @@ public class EnemyRecieveDamage : MonoBehaviour
 
     public GameObject lootDrop;
 
+    public AudioManager audioManager;
+
     // Start is called before the first frame update
     void Start()
     {
         health = maxHealth;
+        audioManager = FindAnyObjectByType<AudioManager>();
     }
 
     public void DealDamage(float damage)
     {
+        audioManager.soundEnemyDamage();
         healthBar.SetActive(true);
         health -= damage;
         CheckDeath();
@@ -47,8 +51,17 @@ public class EnemyRecieveDamage : MonoBehaviour
         {
             if (gameObject.CompareTag("Boss"))
             {
-                FindAnyObjectByType<BossDialogue>().TriggerDialogue();
+                DialogueManager dialogueManager = FindAnyObjectByType<DialogueManager>();
 
+                if(dialogueManager.dialogueState == DialogueManager.DialogueState.ThirdRundCompleted)
+                {
+                    FindAnyObjectByType<GameManager>().SendToYardAfterWin();
+                }
+                else
+                {
+                    FindAnyObjectByType<BossDialogue>().TriggerDialogue();
+                    GameObject.FindGameObjectWithTag("Boss").GetComponent<AIChase>().enabled = false;
+                }
             }
             else
             {

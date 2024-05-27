@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4235970561569692678}
   - component: {fileID: 3698099893434704073}
   - component: {fileID: 1092634129565205180}
+  - component: {fileID: 332942253503012030}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameManager
@@ -46,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  maxHealth: 100
+  maxHealth: 30
   player: {fileID: 0}
   healthText: {fileID: 0}
   healthSlider: {fileID: 0}
@@ -54,6 +55,7 @@ MonoBehaviour:
   coins: 0
   gameManager: {fileID: 1092634129565205180}
   screens: {fileID: 0}
+  audioManager: {fileID: 0}
 --- !u!114 &1092634129565205180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,3 +73,28 @@ MonoBehaviour:
   pauseScreen: {fileID: 0}
   resultScreen: {fileID: 0}
   isGameOver: 0
+--- !u!114 &332942253503012030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5077125051844566229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 357cbd2f75522124683176d228b1c109, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  srcNumbL1: 0
+  helpL1: 
+  srcNumbL2: 0
+  helpL2: 
+  awardL3: 0
+  awardL4: 0
+  timeLimitL5: 0
+  awardL6: 0
+  wrongLimitL7: 0
+  awardL8: 0
+  wrongLimitL9: 0
+  timeLimitL10: 0
+  timeLimitL11: 0

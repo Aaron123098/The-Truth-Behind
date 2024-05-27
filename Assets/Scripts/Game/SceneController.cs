@@ -20,6 +20,9 @@ public class SceneController : MonoBehaviour
     //    }
     //}
 
+    public Animator transition;
+    public float transitionTime = 1;
+
     public void LoadScene(string sceneName)
     {
         foreach (GameObject gameMan in GameObject.FindGameObjectsWithTag("GameManager"))
@@ -32,7 +35,23 @@ public class SceneController : MonoBehaviour
             Destroy(dialogueMan);
         }
 
+        StartCoroutine(LoadTransitionScene(sceneName));
+    }
+
+    IEnumerator LoadTransitionScene(string sceneName)
+    {
+        print(sceneName);
+
+        transition.SetTrigger("Start");
+
+        yield return new WaitForSeconds(transitionTime);
+
         SceneManager.LoadScene(sceneName);
         Time.timeScale = 1f;
+    }
+
+    public void Init()
+    {
+
     }
 }

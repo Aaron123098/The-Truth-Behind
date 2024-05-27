@@ -1,8 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using static DialogueManager;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -23,6 +25,8 @@ public class GameManager : MonoBehaviour
     public bool isGameOver = false;
 
     public static GameManager gameManager;
+
+    public JSONSaveLoadSystem saveLoadSystem;
 
     void Awake()
     {
@@ -127,6 +131,7 @@ public class GameManager : MonoBehaviour
 
     public void SendToYard()
     {
+        Time.timeScale = 1f;
         DialogueManager dialogueManager = FindAnyObjectByType<DialogueManager>();
 
         if(dialogueManager.dialogueState == DialogueManager.DialogueState.BeforeFrstRun)
@@ -135,12 +140,13 @@ public class GameManager : MonoBehaviour
             string saveString = dialogueManager.dialogueState.ToString();
             PlayerPrefs.SetString("DialogueState", saveString);
         }
-
         FindAnyObjectByType<SceneController>().LoadScene("Yard");
     }
 
     public void SendToYardAfterWin()
     {
+        Time.timeScale = 1f;
+
         DialogueManager dialogueManager = FindAnyObjectByType<DialogueManager>();
 
         switch (dialogueManager.dialogueState)
