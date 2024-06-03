@@ -3,19 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DC02033A-7B3F-4E0F-1362-B5DB5AA2AAA8}|Tests.csproj|c:\\users\\usuario\\desktop\\tesis 2\\the-truth-behind\\assets\\tests\\editmode\\tests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC02033A-7B3F-4E0F-1362-B5DB5AA2AAA8}|Tests.csproj|solutionrelative:assets\\tests\\editmode\\tests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8B1FBE7A-1A64-13BD-04AA-BDB126C19FF7}|Scripts.csproj|C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\assets\\scripts\\savesystem\\jsonsaveloadsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8B1FBE7A-1A64-13BD-04AA-BDB126C19FF7}|Scripts.csproj|solutionrelative:assets\\scripts\\savesystem\\jsonsaveloadsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8B1FBE7A-1A64-13BD-04AA-BDB126C19FF7}|Scripts.csproj|C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\assets\\scripts\\savesystem\\configurabledata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8B1FBE7A-1A64-13BD-04AA-BDB126C19FF7}|Scripts.csproj|solutionrelative:assets\\scripts\\savesystem\\configurabledata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8B1FBE7A-1A64-13BD-04AA-BDB126C19FF7}|Scripts.csproj|c:\\users\\usuario\\desktop\\tesis 2\\the-truth-behind\\assets\\scripts\\game\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8B1FBE7A-1A64-13BD-04AA-BDB126C19FF7}|Scripts.csproj|C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\assets\\scripts\\game\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8B1FBE7A-1A64-13BD-04AA-BDB126C19FF7}|Scripts.csproj|solutionrelative:assets\\scripts\\game\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -31,53 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Tests.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Tests\\EditMode\\Tests.cs",
-              "RelativeDocumentMoniker": "Assets\\Tests\\EditMode\\Tests.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Tests\\EditMode\\Tests.cs",
-              "RelativeToolTip": "Assets\\Tests\\EditMode\\Tests.cs",
-              "ViewState": "AQIAAEoAAAAAAAAAAAAAAG8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T23:41:54.274Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\Game\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\GameManager.cs",
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\Game\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Game\\GameManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAtAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwAMAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-26T05:29:48.714Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "JSONSaveLoadSystem.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\SaveSystem\\JSONSaveLoadSystem.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\SaveSystem\\JSONSaveLoadSystem.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\SaveSystem\\JSONSaveLoadSystem.cs",
-              "RelativeToolTip": "Assets\\Scripts\\SaveSystem\\JSONSaveLoadSystem.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwB8AAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T19:26:01.067Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ConfigurableData.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\SaveSystem\\ConfigurableData.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\SaveSystem\\ConfigurableData.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\SaveSystem\\ConfigurableData.cs",
-              "RelativeToolTip": "Assets\\Scripts\\SaveSystem\\ConfigurableData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T19:24:29.112Z",
               "EditorCaption": ""
             }
           ]
