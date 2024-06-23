@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  maxHealth: 30
+  maxHealth: 100
   player: {fileID: 0}
   healthText: {fileID: 0}
   healthSlider: {fileID: 0}
@@ -73,6 +73,7 @@ MonoBehaviour:
   pauseScreen: {fileID: 0}
   resultScreen: {fileID: 0}
   isGameOver: 0
+  saveLoadSystem: {fileID: 0}
 --- !u!114 &332942253503012030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -98,3 +99,37 @@ MonoBehaviour:
   wrongLimitL9: 0
   timeLimitL10: 0
   timeLimitL11: 0
+  l1act: 1
+  l2act: 1
+  l34act: 1
+  l5act: 1
+  l6act: 1
+  l7act: 1
+  l8act: 1
+  l9act: 1
+  l10act: 1
+  l11act: 1
+  confData:
+    srcNumbL1: 0
+    helpL1: 
+    srcNumbL2: 0
+    helpL2: 
+    awardL3: 0
+    awardL4: 0
+    timeLimitL5: 0
+    awardL6: 0
+    wrongLimitL7: 0
+    awardL8: 0
+    wrongLimitL9: 0
+    timeLimitL10: 0
+    timeLimitL11: 0
+    l1act: 0
+    l2act: 0
+    l34act: 0
+    l5act: 0
+    l6act: 0
+    l7act: 0
+    l8act: 0
+    l9act: 0
+    l10act: 0
+    l11act: 0

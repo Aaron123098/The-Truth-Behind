@@ -11158,7 +11158,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7
+  orthographic size: 8
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -11322,7 +11322,8 @@ PrefabInstance:
       value: Admin
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7199183768351581835, guid: e8c35fb3e7a721645829f1392c6a4778, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7636563398389019442, guid: e8c35fb3e7a721645829f1392c6a4778, type: 3}
@@ -11376,6 +11377,7 @@ MonoBehaviour:
     name: 
     sentences: []
   isPlayerOver: 0
+  jsonFile: {fileID: 0}
 --- !u!114 &703653354 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4011929586055309893, guid: aaf09f0152afff1438b164e236ea71a4, type: 3}
@@ -11448,7 +11450,8 @@ PrefabInstance:
       value: Neighbour1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7199183768351581835, guid: e8c35fb3e7a721645829f1392c6a4778, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7636563398389019442, guid: e8c35fb3e7a721645829f1392c6a4778, type: 3}
@@ -14717,7 +14720,8 @@ PrefabInstance:
       value: Neighbour2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7199183768351581835, guid: e8c35fb3e7a721645829f1392c6a4778, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7636563398389019442, guid: e8c35fb3e7a721645829f1392c6a4778, type: 3}
@@ -15316,7 +15320,8 @@ PrefabInstance:
       value: Guide
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7199183768351581835, guid: e8c35fb3e7a721645829f1392c6a4778, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7636563398389019442, guid: e8c35fb3e7a721645829f1392c6a4778, type: 3}
@@ -16053,7 +16058,8 @@ PrefabInstance:
       value: Seller
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7199183768351581835, guid: e8c35fb3e7a721645829f1392c6a4778, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7636563398389019442, guid: e8c35fb3e7a721645829f1392c6a4778, type: 3}

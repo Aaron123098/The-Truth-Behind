@@ -619,7 +619,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7
+  orthographic size: 8
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -957,10 +957,6 @@ PrefabInstance:
       propertyPath: transition
       value: 
       objectReference: {fileID: 135508768}
-    - target: {fileID: 932621445213852193, guid: 84b93bfa6f41cfe42bd2d3fa8eabc21c, type: 3}
-      propertyPath: transitionTime
-      value: 1.5
-      objectReference: {fileID: 0}
     - target: {fileID: 1818832201512373753, guid: 84b93bfa6f41cfe42bd2d3fa8eabc21c, type: 3}
       propertyPath: m_Name
       value: SceneManager

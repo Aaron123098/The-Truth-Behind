@@ -12,14 +12,14 @@
     "wrongLimitL9": 5,
     "timeLimitL10": 120,
     "timeLimitL11": 120,
-	"l1act": false,
+	"l1act": true,
 	"l2act": true,
 	"l34act": true,
-	"l5act": false,
+	"l5act": true,
 	"l6act": true,
 	"l7act": true,
 	"l8act": true,
-	"l9act": false,
+	"l9act": true,
 	"l10act": true,
 	"l11act": true
 }

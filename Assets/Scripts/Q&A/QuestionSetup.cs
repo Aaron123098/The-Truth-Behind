@@ -48,8 +48,6 @@ public class QuestionSetup : MonoBehaviour
     public void ShowNextQuestion()
     {
         attemptsText.text = "Fallos restantes: " + attemptsNmbr.ToString();
-        print(questions.Count);
-        print(totalFolderCount);
         if (questions.Count > totalFolderCount - questionNmbr)
 
         {

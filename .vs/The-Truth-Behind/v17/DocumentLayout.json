@@ -3,6 +3,34 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8B1FBE7A-1A64-13BD-04AA-BDB126C19FF7}|Scripts.csproj|c:\\users\\usuario\\desktop\\tesis 2\\the-truth-behind\\assets\\scripts\\game\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B1FBE7A-1A64-13BD-04AA-BDB126C19FF7}|Scripts.csproj|solutionrelative:assets\\scripts\\game\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B1FBE7A-1A64-13BD-04AA-BDB126C19FF7}|Scripts.csproj|c:\\users\\usuario\\desktop\\tesis 2\\the-truth-behind\\assets\\scripts\\player\\testspell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B1FBE7A-1A64-13BD-04AA-BDB126C19FF7}|Scripts.csproj|solutionrelative:assets\\scripts\\player\\testspell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B1FBE7A-1A64-13BD-04AA-BDB126C19FF7}|Scripts.csproj|c:\\users\\usuario\\desktop\\tesis 2\\the-truth-behind\\assets\\scripts\\q\u0026a\\questionsetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B1FBE7A-1A64-13BD-04AA-BDB126C19FF7}|Scripts.csproj|solutionrelative:assets\\scripts\\q\u0026a\\questionsetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B1FBE7A-1A64-13BD-04AA-BDB126C19FF7}|Scripts.csproj|c:\\users\\usuario\\desktop\\tesis 2\\the-truth-behind\\assets\\scripts\\enemy\\enemyrecievedamage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B1FBE7A-1A64-13BD-04AA-BDB126C19FF7}|Scripts.csproj|solutionrelative:assets\\scripts\\enemy\\enemyrecievedamage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B1FBE7A-1A64-13BD-04AA-BDB126C19FF7}|Scripts.csproj|c:\\users\\usuario\\desktop\\tesis 2\\the-truth-behind\\assets\\scripts\\enemy\\aichase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B1FBE7A-1A64-13BD-04AA-BDB126C19FF7}|Scripts.csproj|solutionrelative:assets\\scripts\\enemy\\aichase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B1FBE7A-1A64-13BD-04AA-BDB126C19FF7}|Scripts.csproj|c:\\users\\usuario\\desktop\\tesis 2\\the-truth-behind\\assets\\scripts\\game\\scenecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B1FBE7A-1A64-13BD-04AA-BDB126C19FF7}|Scripts.csproj|solutionrelative:assets\\scripts\\game\\scenecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B1FBE7A-1A64-13BD-04AA-BDB126C19FF7}|Scripts.csproj|c:\\users\\usuario\\desktop\\tesis 2\\the-truth-behind\\assets\\scripts\\savesystem\\jsonsaveloadsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B1FBE7A-1A64-13BD-04AA-BDB126C19FF7}|Scripts.csproj|solutionrelative:assets\\scripts\\savesystem\\jsonsaveloadsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8B1FBE7A-1A64-13BD-04AA-BDB126C19FF7}|Scripts.csproj|C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\assets\\scripts\\game\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8B1FBE7A-1A64-13BD-04AA-BDB126C19FF7}|Scripts.csproj|solutionrelative:assets\\scripts\\game\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -14,20 +42,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TestSpell.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\Player\\TestSpell.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\TestSpell.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\Player\\TestSpell.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\TestSpell.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T00:39:44.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EnemyRecieveDamage.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\Enemy\\EnemyRecieveDamage.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyRecieveDamage.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\Enemy\\EnemyRecieveDamage.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyRecieveDamage.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAgwDQAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T00:05:47.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AIChase.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\Enemy\\AIChase.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\AIChase.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\Enemy\\AIChase.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\AIChase.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB0AAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T00:04:48.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QuestionSetup.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\Q\u0026A\\QuestionSetup.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Q\u0026A\\QuestionSetup.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\Q\u0026A\\QuestionSetup.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Q\u0026A\\QuestionSetup.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAADgvzIAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T00:04:24.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SceneController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\Game\\SceneController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\SceneController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\Game\\SceneController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Game\\SceneController.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T23:56:51.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "DialogueManager.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\Game\\DialogueManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\DialogueManager.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\Game\\DialogueManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Game\\DialogueManager.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAYwLcAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T23:43:10.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "JSONSaveLoadSystem.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\SaveSystem\\JSONSaveLoadSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SaveSystem\\JSONSaveLoadSystem.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\SaveSystem\\JSONSaveLoadSystem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SaveSystem\\JSONSaveLoadSystem.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T22:43:13.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\Game\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\GameManager.cs",
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\Tesis 2\\The-Truth-Behind\\Assets\\Scripts\\Game\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Game\\GameManager.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAQwAMAAAASAAAA",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAswAMAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T05:29:48.714Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-26T05:29:48.714Z"
             }
           ]
         }
