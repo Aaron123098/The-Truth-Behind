@@ -51,6 +51,8 @@ public class EnemyRecieveDamage : MonoBehaviour
         {
             if (gameObject.CompareTag("Boss"))
             {
+                Destroy(GetComponent<TestEnemyShooting>());
+
                 DialogueManager dialogueManager = FindAnyObjectByType<DialogueManager>();
 
                 if(dialogueManager.dialogueState == DialogueManager.DialogueState.ThirdRundCompleted)
